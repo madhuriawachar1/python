@@ -28,7 +28,7 @@ def firstElement(arr, n, k):
     # dictionary to count
     # occurrences of
     # each element
-    count_map = {};
+    count_map = {}
     for i in range(0, n):
         if(arr[i] in count_map.keys()):
             count_map[arr[i]] += 1
@@ -55,4 +55,10 @@ if __name__=="__main__":
     n = len(arr)
     k = 2
     print(firstElement(arr, n, k))
- 
+
+
+d = {1: '001', 2: '010', 3: '011'}
+# since 4 is not in keys, it'll print "Not found"
+print(d.get(4))
+
+print(d.get(4, "Not found"))
